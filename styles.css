@@ -1,0 +1,13 @@
+.tradingview-widget-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0; /* removes extra inline spacing */
+  overflow: hidden;
+}
+
+.tradingview-widget-container__widget {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
