@@ -1,6 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradingView Ticker Widget</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        {
+          "proName": "FOREXCOM:SPXUSD",
+          "title": "S&P 500 Index"
+        },
+        {
+          "proName": "FOREXCOM:NSXUSD",
+          "title": "US 100 Cash CFD"
+        },
+        {
+          "proName": "FX_IDC:EURUSD",
+          "title": "EUR to USD"
+        },
+        {
+          "proName": "BITSTAMP:BTCUSD",
+          "title": "Bitcoin"
+        },
+        {
+          "proName": "BITSTAMP:ETHUSD",
+          "title": "Ethereum"
+        },
+        {
+          "description": "Vanguard Total Stock Market ETF",
+          "proName": "AMEX:VTI"
+        },
+        {
+          "description": " Vanguard Total World Stock Index ",
+          "proName": "NASDAQ:VXUS"
+        },
+        {
+          "description": "Vanguard Total Bond Market",
+          "proName": "NASDAQ:BND"
+        },
+        {
+          "description": "Consumer Staples ETF",
+          "proName": "AMEX:XLP"
+        },
+        {
+          "description": "Vanguard Real Estate ETF",
+          "proName": "AMEX:VNQ"
+        },
+        {
+          "description": "iShares MSCI France ETF",
+          "proName": "AMEX:EWQ"
+        },
+        {
+          "description": "Vanguard Short-Term Treasury",
+          "proName": "NASDAQ:VGSH"
+        }
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
   {
   "symbols": [
@@ -25,16 +90,56 @@
       "title": "Ethereum"
     },
     {
+      "description": "",
+      "proName": "NASDAQ:VGSH"
+    },
+    {
+      "description": "",
+      "proName": "AMEX:EWQ"
+    },
+    {
+      "description": "",
+      "proName": "AMEX:VNQ"
+    },
+    {
+      "description": "",
+      "proName": "AMEX:XLP"
+    },
+    {
+      "description": "",
+      "proName": "NASDAQ:BND"
+    },
+    {
+      "description": "",
+      "proName": "NASDAQ:VXUS"
+    },
+    {
+      "description": "",
+      "proName": "AMEX:VTI"
+    },
+    {
       "description": "DOW Jones",
       "proName": "BLACKBULL:US30"
     }
   ],
   "showSymbolLogo": true,
-  "isTransparent": true,
+  "isTransparent": false,
   "displayMode": "adaptive",
-  "colorTheme": "dark",
+  "colorTheme": "light",
   "locale": "en"
 }
   </script>
 </div>
 <!-- TradingView Widget END -->
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": true,
+      "displayMode": "adaptive",
+      "colorTheme": "dark",
+      "locale": "en"
+    }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</body>
+</html>
